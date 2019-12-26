@@ -1,24 +1,56 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.wrapper {
+    height: 100%;
     width: 100%;
 }
 
 
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+}
+
+
 .backdrop {
-    background-image: url('https://gurgickpansout.s3.amazonaws.com/smile.jpg');
+    background-image: url('https://gurgickpansout.s3.amazonaws.com/TS_ENGAGEMENT20191115_0109.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    margin: auto;
-    flex: 1;
-    justify-content: center;
+    height: auto;
+    display: flex; 
+    /* flex-direction: column; */
+    align-items: flex-start;
+    overflow: hidden;
     flex-wrap: wrap;
 
 }
 
+.backdrop nav {
+    border-left: 10px white solid;
+    color: white;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7%;
+    padding-top: 5%;
+    order: 1;
+}
+
+.backdrop p {
+    font-weight: thin;
+    height: 5%;
+}
+
 .backdrop h1 {
     color: white;
+    display: flex;
+    padding-left: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    width: auto;
+    font-size: 10vw;
+    text-align: right;
 }
