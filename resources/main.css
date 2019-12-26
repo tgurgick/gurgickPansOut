@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+.backdrop {
+    background-image: url('https://gurgickpansout.s3.amazonaws.com/smile.jpg');
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.backdrop h1 {
+    color: white;
+}
