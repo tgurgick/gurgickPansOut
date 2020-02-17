@@ -6,27 +6,149 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Gurgick Pan Wedding</title>
-        <meta name="description" content="">
+        <title>#GurgickPansOut</title>
+        <meta name="Gurgick Pans Out" content="Gurgick Pans Out 6.5.2020">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./resources/main.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="resources/main.css" type="text/css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var sections = $('section')
+                , nav = $('nav')
+                , nav_height = nav.outerHeight();
+
+                $(window).on('scroll', function () {
+                var cur_pos = $(this).scrollTop();
+                
+                sections.each(function() {
+                    var top = $(this).offset().top,
+                        bottom = top + $(this).outerHeight();
+                        
+                    if (cur_pos >= top && cur_pos <= bottom) {
+                    nav.find('a').removeClass('active');
+                    sections.removeClass('active');
+                    
+                    $(this).addClass('active');
+                    nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+                    }
+
+                });
+                });
+
+                nav.find('a').on('click', function () {
+                var $el = $(this)
+                    , id = $el.attr('href');
+                
+                $('html, body').animate({
+                    scrollTop: $(id).offset().top
+                });
+
+                return false;
+                });
+            });
+        
+        </script>
+
     </head>
     <body>
-        <div class="wrapper">
-            <div class="backdrop">
-                <div id="#Home">
-                    <nav>
-                        <p>Home</p>
-                        <p>Bride + Groom</p>
-                        <p>Wedding Party</p>
-                        <p>Details</p>
-                        <p>Registry</p>
-                        <p>About</p>
-                    </nav>
-                    <h1>6.5.2020</h1>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#home" >HOME</a></li>
+                    <li><a href="#couple" >BRIDE + GROOM</a></li>
+                    <li><a href="#details" >DETAILS</a></li>
+                    <li><a href="#guests" >GUESTS</a></li>
+                    <li><a href="#gifts" >GIFTS</a></li>
+                    <li><a href="#vendors" >VENDORS</a></li>
+                </ul> 
+            </nav>
+        </header>
+
+        <div class="content">
+            <section class="home" id="home">
+                <!-- <img src="https://gurgickpansout.s3.amazonaws.com/TS_ENGAGEMENT20191115_0109.jpg" alt="Holing Hands"> -->
+                <div class="container">
+                    <h1>The Future Gurgicks</h1>
+                    <br>
+                    <br>
+                    <h2>6.5.2020</h2>
+                
                 </div>
-            </div>
+            </section>
+            
+            
+            <section class="couple" id="couple">
+                <div class="container">
+                    <h1>How we Met</h1>
+                    <br>
+                    <p>It all started in the summer of 2013...</p>
+                    <h1>Where we are today</h1>
+                    <p>Some things you may not know...</p>
+                </div>
+            </section>
+            
+            
+            <section class="details" id="details">
+                <div class="container">
+                    <h1>Event Details</h1>
+                    <br>
+                    <p>AGENDA</p>
+                    <p>LOCATION</p>
+                    <p>HOTEL</p>
+                </div>
+            </section>
+            
+            
+            <section class="guests" id="guests">
+                <div class="container">
+                    <h1>Life of the Party</h1>
+                    <br>
+                    <p>WEDDING PARTY</p>
+                    <p>FAMILY</p>
+                    <p>FRIENDS</p>
+                </div>
+            </section>
+
+            <section class="gifts" id="gifts"">
+                <div class="container">
+                    <h1>The Next Adventure</h1>
+                    <br>
+                    <p>This is no wedding registry.</p>
+                    <p>Please support the next adventure here:</p>
+                </div>
+            </section>
+
+            <section class="vendors" id="vendors">
+                <div class="container">
+                    <h1>Support Local Lancaster, Pennsylvania</h1>
+                    <br>
+                    <p>VENUE</p>
+                    <p>INVITATIONS</p>
+                    <p>FLOWERS</p>
+                    <p>PHOTOGRAPHY</p>
+                    <p>ENTERTAINMENT</p>
+                    <p>HAIR + MAKEUP</p>
+                    <p>TABLES</p>
+                </div>
+            </section>
         </div>
-        <script src="" async defer></script>
+
+<!-- 
+        <footer>
+            <ul>
+                <li>ONE</li>
+                <li>TWO</li>
+                <li>THREE</li>
+                <li>FOUR</li>
+                <li>FIVE</li>
+            </ul>
+        </footer> -->
+
+
+    
     </body>
+  
 </html>
