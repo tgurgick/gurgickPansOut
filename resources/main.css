@@ -15,6 +15,7 @@
     padding: 0;
 }
 
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -23,7 +24,7 @@ img {
 
 h1 {
     font-family: "Aerotis", serif;
-    font-size: 40px;
+    font-size: 50px;
     transition-duration: 750ms;
     transition-timing-function: ease;
 }
@@ -31,7 +32,13 @@ h1 {
 h2 {
     font-family: 'Arno Pro Light Display', serif;
     font-weight: lighter;
-    font-size: 4em;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: 'Arno Pro Light Display', serif;
+    font-weight: lighter;
+    font-size: 2em;
 }
 
 body {
@@ -51,7 +58,7 @@ body {
 nav {
     position: fixed;
     margin-top: 2em;
-    z-index: 10;
+    z-index: 15;
     width: 5em;
     top: 10;
     height: 100%;
@@ -80,6 +87,8 @@ nav a {
     color: white;
     padding: 1em 1em 1em 1em;
     width: 100%;
+
+
 }
 
 
@@ -89,7 +98,7 @@ nav a {
 }
 
 .container {
-    margin-left: 7em;
+    margin-left: 8em;
     /* border: 1px white solid;
     padding: 1em; */
 }
@@ -104,50 +113,249 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: right;
+    text-align: center;
 
 }
 
-.couple {
-    padding: 5em;
-    height: 900px;
-    border: 1px white solid;
-    background: black;
+.home-title {
+    margin-left: 6em;
+    margin-top: 0;
+}
+
+.about-container {
+    background-color: #889bae;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
     color: white;
 }
 
-.details {
-    padding: 5em;
-    height: 100%;
-    min-height: 750px;
-    background: grey;
+.about-content {
+    background-color: #889bae;
+    padding: 3em;
+    margin: .1em;
+    border: 2px white solid;
+}
+
+.couple {
+    padding: 3em;
+    margin: 0;
+    height: 1000px;
+    background: black;
     color: black;
     background-image: url('https://gurgickpansout.s3.amazonaws.com/TS_ENGAGEMENT20191115_0050.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    background-position: 65% 0%;
+}
+
+.couple-container {
+    background-color: black;
+    padding: 1em;
+    margin: 0;
+    text-align: right;
+    color: white;
+    height: auto;
+}
+
+.couple-content {
+    background-color: black;
+    padding: 1em;
+    margin: 15em;
+    margin-right: 5em;
+    margin-left: 15em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.guests {
+    padding: 8em;
+    padding-top: 3em;
+    height: 700px;
+    color: white;
+    background-image: url('https://gurgickpansout.s3.amazonaws.com/corks.jpeg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: right
 }
 
-.guests {
-    padding: 5em;
-    height: 900px;
-    background: #d3d3d3;
+.guests-container {
+    background-color: #36454f;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
     color: white;
-    text-align: right
 }
+
+.guests-content {
+    background-color: #36454f;
+    padding: 3em;
+    margin: .1em;
+    border: 2px white solid;
+}
+
+.details {
+    padding: 10em;
+    height: auto;
+    color: white;
+    background-image: url('https://gurgickpansout.s3.amazonaws.com/masthead-cork-factory-hotel.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.details-container {
+    background-color: #d3d3d3;
+    padding: 1em;
+    margin: 0;
+    text-align: right;
+    color: black;
+}
+
+.details-content {
+    background-color: #d3d3d3;
+    padding: 3em;
+    margin: .1em;
+    border: 2px black solid;
+}
+
+
 
 .gifts {
     padding: 5em;
-    height: 900px;
+    height: auto;
     background:#889bae;
     color: white;
+    text-align: right;
+}
+
+
+.adventure {
+    height: auto;
+    min-height: 500px;
+    background-image: url('https://gurgickpansout.s3.amazonaws.com/boating.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 100%;
 }
 
 .vendors {
     padding: 5em;
-    height: 900px;
+    height: 800px;
     background: black;
     color: white;
-    text-align: right
+    text-align: right;
+}
+
+
+@media (min-width: 32rem) {
+    
+    .home-title {
+        margin-left: 7em;
+        margin-top: 4em;
+    }
+    
+}
+
+
+@media (min-width: 40rem) {
+    
+    .home-title {
+        margin-left: 6em;
+        margin-top: 5em;
+    }
+    
+    .about-container {
+        background-color: #889bae;
+        padding: 1em;
+        margin: .1em;
+        top: -15em;
+        margin-bottom: -15em;
+        position: relative;
+        left: 50%;
+        width: 60%;
+        z-index: 10;
+        width: 50%;
+        max-width: 30em;
+    }
+    
+    .about-content {
+        background-color: #889bae;
+        padding: 2em;
+        margin: .1em;
+        border: 2px white solid;
+    }
+
+    .couple {
+        top: -15em;
+        padding-top: 28em;
+        padding-right: 2em;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: right;
+        background-position: 90% 0%;
+    }
+
+    .couple-container {
+        top: -15em;
+        position: relative;
+    }
+
+    .guests {
+        top: -15em;
+        padding-right: 10em;
+        position: relative;
+    }
+
+    .guests-container {
+        top: -40em;
+        margin-bottom: -32em;
+        position: relative;
+        left: 18%;
+        z-index: 10;
+        width: 70%;
+        max-width: 40em;
+    }
+
+    .details {
+        top: -15em;
+        padding-top: 10em;
+        position: relative;
+        text-align: left;
+        padding-left: 22em;
+        height: 1000px;
+    }
+
+    .details-container {
+        background-color: #d3d3d3;
+        padding: 1em;
+        margin: .1em;
+        top: -55em;
+        margin-bottom: -55em;
+        position: relative;
+        left: 35%;
+        width: 60%;
+        z-index: 10;
+        max-width: 30em;
+    }
+
+    .gifts {
+        top: -15em;
+        margin-bottom: -15em;
+        padding-top: 20em;
+        position: relative;
+    }
+
+    .vendors {
+        position: relative;
+    }
+
 }
