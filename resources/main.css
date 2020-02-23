@@ -1,3 +1,5 @@
+/* FONT IMPORT */
+
 @font-face {
     font-family: 'Aerotis';
     src: url('Aerotis.otf');
@@ -7,6 +9,8 @@
     font-family: 'Arno Pro Light Display';
     src: url('Arno Pro Light Display.ttf');
 }
+
+/* NAV AND FOUNDATIONAL CSS */
 
 * {
     font-family: 'Arno Pro Light Display', serif;
@@ -46,15 +50,6 @@ body {
     position: relative;
 }
 
-/* header {
-    position: fixed;
-    margin-top: 2em;
-    z-index: 10;
-    overflow: auto;
-    width: 5em;
-    top: 0;
-} */
-
 nav {
     position: fixed;
     margin-top: 2em;
@@ -64,8 +59,6 @@ nav {
     height: 100%;
     width: 200px;
 }
-
-
 
 nav ul {
     margin: 0;
@@ -91,7 +84,6 @@ nav a {
 
 }
 
-
 .active {
     color: black;
     background: white;
@@ -102,6 +94,9 @@ nav a {
     /* border: 1px white solid;
     padding: 1em; */
 }
+
+
+/* HOME SPLASH */
 
 .home {
     padding: 5em;
@@ -125,7 +120,7 @@ nav a {
     background-color: #889bae;
     padding: 1em;
     margin: 0;
-    text-align: center;
+    text-align: right;
     color: white;
 }
 
@@ -135,6 +130,9 @@ nav a {
     margin: .1em;
     border: 2px white solid;
 }
+
+
+/* MEET THE COUPLE */
 
 .couple {
     padding: 3em;
@@ -161,31 +159,33 @@ nav a {
 
 .couple-content {
     background-color: black;
-    padding: 1em;
-    margin: 15em;
-    margin-right: 5em;
-    margin-left: 15em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-left: 9em;
+    /* max-width: 10em; */
+    text-align: right;
+
 }
 
+
+/* ABOUT THE GUEST LIST */
+
 .guests {
-    padding: 8em;
-    padding-top: 3em;
+    /* padding: 8em; */
+    padding-top: 5em;
+    padding-right: 5em;
     height: 700px;
     color: white;
     background-image: url('https://gurgickpansout.s3.amazonaws.com/corks.jpeg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: right
+    text-align: right;
 }
 
 .guests-container {
     background-color: #36454f;
     padding: 1em;
     margin: 0;
-    text-align: center;
+    text-align: right;
     color: white;
 }
 
@@ -194,17 +194,22 @@ nav a {
     padding: 3em;
     margin: .1em;
     border: 2px white solid;
+    padding-left: 8em;
 }
 
+
+
+/* EVENT DETAILS */
+
 .details {
-    padding: 10em;
+    padding: 6em;
     height: auto;
     color: white;
     background-image: url('https://gurgickpansout.s3.amazonaws.com/masthead-cork-factory-hotel.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    text-align: right;
 
 }
 
@@ -225,6 +230,9 @@ nav a {
 
 
 
+/* GIFT INFO */
+
+
 .gifts {
     padding: 5em;
     height: auto;
@@ -236,17 +244,21 @@ nav a {
 
 .adventure {
     height: auto;
-    min-height: 500px;
+    min-height: 700px;
     background-image: url('https://gurgickpansout.s3.amazonaws.com/boating.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: 15% 80%;
 }
 
+
+/* END AND FOOTER */
+
 .vendors {
-    padding: 5em;
-    height: 800px;
+    padding-right: 1em;
+    padding-top: 5em;
+    height: 1000px;
     background: black;
     color: white;
     text-align: right;
@@ -262,15 +274,17 @@ a {
     text-decoration: none;
 } */
 
-a:hover {
-    color: #d3d3d3;
-}
-
 /* .vendors a:visited {
     color: white;
     text-decoration: none;
 } */
 
+
+
+
+
+
+/* MEDIA QUERIES FOR LARGER SCREEN VIEW ( DESIGNED FOR MOBILE ) */
 
 @media (min-width: 32rem) {
     
@@ -282,7 +296,13 @@ a:hover {
 }
 
 
+
+
 @media (min-width: 40rem) {
+
+    a:hover {
+        color: #d3d3d3;
+    }
     
     .home-title {
         margin-left: 6em;
@@ -301,6 +321,7 @@ a:hover {
         z-index: 10;
         width: 50%;
         max-width: 30em;
+        text-align: center;
     }
     
     .about-content {
@@ -325,6 +346,11 @@ a:hover {
     .couple-container {
         top: -15em;
         position: relative;
+        
+    }
+
+    .couple-content {
+        max-width: 50%;
     }
 
     .guests {
@@ -335,21 +361,27 @@ a:hover {
 
     .guests-container {
         top: -40em;
-        margin-bottom: -32em;
+        margin-bottom: -42em;
         position: relative;
         left: 18%;
         z-index: 10;
         width: 70%;
         max-width: 40em;
+        text-align: center;
+    }
+
+    .guests-content {
+        text-align: center;
+        padding-left: 3em;
     }
 
     .details {
         top: -15em;
-        padding-top: 10em;
+        padding-top: 20em;
         position: relative;
         text-align: left;
         padding-left: 22em;
-        height: 1000px;
+        height: 1200px;
     }
 
     .details-container {
