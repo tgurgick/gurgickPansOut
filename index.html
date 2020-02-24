@@ -20,7 +20,7 @@
                 , nav_height = nav.outerHeight();
 
                 $(window).on('scroll', function () {
-                var cur_pos = $(this).scrollTop();
+                var cur_pos = $(this).scrollTop()+300;
                 
                 sections.each(function() {
                     var top = $(this).offset().top,
